@@ -1,0 +1,6 @@
+<Var builder="Input" id="PNToggleHud" displayName="PNToggleHud" displayType="INPUTPC" actions="PNToggleHud" />
+<Var builder="Input" id="PNPee" displayName="PN_input_Pee" displayType="INPUTPC" actions="PNPee" />
+<Var builder="Input" id="PNPoop" displayName="PN_input_Poop" displayType="INPUTPC" actions="PNPoop" />
+<Var builder="Input" id="PNDrinkShallow" displayName="PN_input_DrinkShallow" displayType="INPUTPC" actions="PNDrinkWater" />
+<Var builder="Input" id="HoldToMeditate" displayName="HoldToMeditate" displayType="INPUTPC" actions="HoldToMeditate" />
+<Var builder="Input" id="RefillPotionsToggle" displayName="RefillPotionsToggle" displayType="INPUTPC" actions="RefillPotionsToggle" />

@@ -1,0 +1,13 @@
+[Exploration]
+IK_F12=(Action=PNToggleHud)
+IK_F10=(Action=PNPee)
+IK_F11=(Action=PNPoop)
+IK_F7=(Action=PNDrinkWater)
+
+[Combat]
+IK_F12=(Action=PNToggleHud)
+
+[Exploration]
+IK_N=(Action=HoldToMeditate,State=Duration,IdleTime=0.4)
+IK_Pad_RightThumb=(Action=HoldToMeditate,State=Duration,IdleTime=0.4)
+IK_F4=(Action=RefillPotionsToggle)

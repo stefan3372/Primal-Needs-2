@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<UserConfig>
+	<Group id="PNhunger"                displayName="Mods.PN.hunger">
+		<PresetsArray>
+			<Preset id="0"              displayName="Default">
+				<Entry varId="PNhuntoggle" 	 	  	value="1" />
+				<Entry varId="PNhuncounter" 	    value="15" />
+				<Entry varId="PNhundamage" 	   		value="10" />
+				<Entry varId="PNhuncombat" 		   	value="0.1" />
+				<Entry varId="PNhunvital" 	   		value="0.8" />
+				<Entry varId="PNhunstamina" 		value="0.2" />
+				<Entry varId="PNhunadrenaline" 	   	value="0.5" />
+				<Entry varId="PNhuntox" 	 	  	value="0.5" />
+				<Entry varId="PNhunmed"				value="0.1"/>
+				<Entry varId="PNhunfast" 			value="7" />
+			</Preset>
+		</PresetsArray>
+		<VisibleVars>
+			<Var id="PNhuntoggle"		displayName="PN_huntoggle"		 displayType="TOGGLE"/>
+			<Var id="PNhuncounter" 		displayName="PN_huncounter"		 displayType="SLIDER;0;500;500"/>
+			<Var id="PNhundamage"	 	displayName="PN_hundamage"		 displayType="SLIDER;0;100;100"/>
+			<Var id="PNhunfast"			displayName="PN_hunfast"		 displayType="SLIDER;0;100;100"/>
+			<Var id="PNhunmed"	 		displayName="PN_hunmed"			 displayType="SLIDER;0;2;200"/>
+			<Var id="PNhuncombat"	 	displayName="PN_huncombat"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNhunvital"	 	displayName="PN_hunvital"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNhunstamina"	 	displayName="PN_hunstamina"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNhunadrenaline"	displayName="PN_hunadrenaline"	 displayType="SLIDER;0;2;200"/>
+			<Var id="PNhuntox"	 		displayName="PN_huntox"			 displayType="SLIDER;0;2;200"/>
+		</VisibleVars>
+	</Group>
+		<Group id="PNthirst"            displayName="Mods.PN.thirst">
+		<PresetsArray>
+			<Preset id="0"              displayName="Default">
+				<Entry varId="PNthrtoggle" 	 	  	value="1" />
+				<Entry varId="PNthrfast" 			value="9" />
+				<Entry varId="PNthrcounter" 		value="5" />
+				<Entry varId="PNthrcombat" 		   	value="0.3" />
+				<Entry varId="PNthrvital" 	   		value="0.1" />
+				<Entry varId="PNthrstamina" 		value="0.5" />
+				<Entry varId="PNthradrenaline" 	   	value="0.2" />
+				<Entry varId="PNthrtox" 	 	  	value="0.7" />
+				<Entry varId="PNthrmed"				value="0.1"/>
+				<Entry varId="PNthrstaminamult"		value="50"/>
+				<Entry varId="PNthrshallow"			value="5"/>
+				<Entry varId="PNthrshallowpuke"		value="5"/>
+				<Entry varId="PNthrshallowtox"		value="10"/>
+			</Preset>
+		</PresetsArray>
+		<VisibleVars>
+			<Var id="PNthrtoggle"		displayName="PN_thrtoggle"		 displayType="TOGGLE"/>
+			<Var id="PNthrcounter" 		displayName="PN_huncounter"		 displayType="SLIDER;0;500;500"/>
+			<Var id="PNthrstaminamult" 	displayName="PN_thrstaminamult"	 displayType="SLIDER;0;100;100"/>
+			<Var id="PNthrfast"			displayName="PN_hunfast"		 displayType="SLIDER;0;100;100"/>
+			<Var id="PNthrmed"	 		displayName="PN_hunmed"			 displayType="SLIDER;0;2;200"/>
+			<Var id="PNthrshallow"	 	displayName="PN_thrshallow"		 displayType="SLIDER;0;100;100"/>
+			<Var id="PNthrshallowpuke"	displayName="PN_thrshallowpuke"	 displayType="SLIDER;0;10;10"/>
+			<Var id="PNthrshallowtox"	displayName="PN_thrshallowtox"	 displayType="SLIDER;0;100;100"/>
+			<Var id="PNthrcombat"	 	displayName="PN_huncombat"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNthrvital"	 	displayName="PN_hunvital"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNthrstamina"	 	displayName="PN_hunstamina"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNthradrenaline"	displayName="PN_hunadrenaline"	 displayType="SLIDER;0;2;200"/>
+			<Var id="PNthrtox"	 		displayName="PN_huntox"			 displayType="SLIDER;0;2;200"/>
+		</VisibleVars>
+	</Group>
+		<Group id="PNfatigue"           displayName="Mods.PN.fatigue">
+		<PresetsArray>
+			<Preset id="0"              displayName="Default">
+				<Entry varId="PNfattoggle" 	 	  	value="1" />
+				<Entry varId="PNfatcounter" 		value="20" />
+				<Entry varId="PNfatfast" 			value="5" />
+				<Entry varId="PNfatcombat" 		   	value="1.0" />
+				<Entry varId="PNfatvital" 	   		value="0.4" />
+				<Entry varId="PNfatstamina" 		value="0.2" />
+				<Entry varId="PNfatadrenaline" 	   	value="0" />
+				<Entry varId="PNfattox" 	 	  	value="0" />
+				<Entry varId="PNfatovereat" 	   	value="0.2" />
+				<Entry varId="PNfatoverdrink" 	 	value="0.1" />
+				<Entry varId="PNfatweight" 	 		value="1.0" />
+				<Entry varId="PNfatweightthr" 	 	value="50" />
+				<Entry varId="PNfatlight" 	 		value="0.05" />
+				<Entry varId="PNfatmedium" 	 		value="0.15" />
+				<Entry varId="PNfatheavy" 	 		value="0.25" />
+			</Preset>
+		</PresetsArray>
+		<VisibleVars>
+			<Var id="PNfattoggle"		displayName="PN_fattoggle"		 displayType="TOGGLE"/>
+			<Var id="PNfatcounter" 		displayName="PN_huncounter"		 displayType="SLIDER;0;500;500"/>
+			<Var id="PNfatfast"			displayName="PN_hunfast"		 displayType="SLIDER;0;100;100"/>
+			<Var id="PNfatovereat"		displayName="PN_fatovereat"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNfatoverdrink"	displayName="PN_fatoverdrink"	 displayType="SLIDER;0;2;200"/>
+			<Var id="PNfatlight"		displayName="PN_fatlight"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNfatmedium"		displayName="PN_fatmedium"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNfatheavy"		displayName="PN_fatheavy"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNfatweightthr"	displayName="PN_fatweightthr"	 displayType="SLIDER;0;100;100"/>
+			<Var id="PNfatweight"	 	displayName="PN_fatweight"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNfatcombat"	 	displayName="PN_huncombat"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNfatvital"	 	displayName="PN_hunvital"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNfatstamina"	 	displayName="PN_hunstamina"		 displayType="SLIDER;0;2;200"/>
+			<Var id="PNfatadrenaline"	displayName="PN_hunadrenaline"	 displayType="SLIDER;0;2;200"/>
+			<Var id="PNfattox"	 		displayName="PN_huntox"			 displayType="SLIDER;0;2;200"/>
+		</VisibleVars>
+	</Group>
+	<Group id="PNpp"                    displayName="Mods.PN.pp">
+		<PresetsArray>
+			<Preset id="0"              displayName="Default">
+				<Entry varId="PNpeeon"              value="1.0" /> 
+				<Entry varId="PNpoopon"             value="1.0" />
+				<Entry varId="PNpukethr"            value="8" /> 
+				<Entry varId="PNpukehun"            value="5" /> 
+				<Entry varId="PNpeeperdrink"        value="1" /> 
+				<Entry varId="PNpeeperoverdrink"    value="2" /> 
+				<Entry varId="PNpooppereat"         value="1" /> 
+				<Entry varId="PNpoopperovereat"     value="2" /> 
+			</Preset>
+		</PresetsArray>
+		<VisibleVars>
+			<Var id="PNpeeon"           displayName="PN_peeon"           displayType="TOGGLE"/>
+			<Var id="PNpoopon"          displayName="PN_poopon"          displayType="TOGGLE"/>
+			<Var id="PNpeeperdrink"     displayName="PN_peeperdrink"     displayType="SLIDER;0;9;9"/> 
+			<Var id="PNpeeperoverdrink" displayName="PN_peeperoverdrink" displayType="SLIDER;0;9;9"/> 
+			<Var id="PNpooppereat"      displayName="PN_pooppereat"      displayType="SLIDER;0;19;19"/>
+			<Var id="PNpoopperovereat"  displayName="PN_poopperovereat"  displayType="SLIDER;0;19;19"/>
+			<Var id="PNpukethr"         displayName="PN_pukethr"         displayType="SLIDER;0;100;100"/>
+			<Var id="PNpukehun"         displayName="PN_pukehun"         displayType="SLIDER;0;100;100"/> 
+		</VisibleVars>
+	</Group>
+	<Group id="PNanim"                  displayName="Mods.PN.anim.toggles">
+		<PresetsArray>
+			<Preset id="0"              displayName="Default">
+				<Entry varId="PNeat"                value="1.0" /> 
+				<Entry varId="PNdrink"              value="1.0" /> 
+				<Entry varId="PNpuke"               value="1.0" /> 
+				<Entry varId="PNpee"                value="1.0" /> 
+				<Entry varId="PNpoop"               value="1.0" /> 
+				<Entry varId="PNsleep"              value="1.0" /> 				
+				<Entry varId="PNoil"                value="1.0" /> 
+				<Entry varId="PNinv"                value="1.0" /> 
+				<Entry varId="PNloot"               value="1.0" /> 
+				<Entry varId="PNgrindstone"         value="1.0" /> 
+				<Entry varId="PNworkbench"          value="1.0" /> 
+				<Entry varId="PNalteat"             value="0.0" /> 
+				<Entry varId="PNaltdrink"           value="0.0" /> 
+				<Entry varId="PNhorndrink"          value="1.0" /> 
+				<Entry varId="PNhorneat"           	value="1.0" /> 
+			</Preset>
+		</PresetsArray>
+		<VisibleVars>
+			<Var id="PNeat"             displayName="PN_eat"             displayType="TOGGLE"/> 
+			<Var id="PNalteat"          displayName="PN_alteat"          displayType="TOGGLE"/>
+			<Var id="PNhorneat"         displayName="PN_horneat"         displayType="TOGGLE"/>
+			<Var id="PNdrink"           displayName="PN_drink"           displayType="TOGGLE"/>
+			<Var id="PNaltdrink"        displayName="PN_altdrink"        displayType="TOGGLE"/>
+			<Var id="PNhorndrink"       displayName="PN_horndrink"       displayType="TOGGLE"/>
+			<Var id="PNinv"             displayName="PN_inv"             displayType="TOGGLE"/>
+			<Var id="PNpee"             displayName="PN_pee"             displayType="TOGGLE"/> 
+			<Var id="PNpoop"            displayName="PN_poop"            displayType="TOGGLE"/>
+			<Var id="PNoil"             displayName="PN_oil"             displayType="TOGGLE"/>
+			<Var id="PNloot"            displayName="PN_loot"            displayType="TOGGLE"/>
+			<Var id="PNgrindstone"      displayName="PN_grindstone"      displayType="TOGGLE"/> 
+			<Var id="PNworkbench"       displayName="PN_workbench"       displayType="TOGGLE"/> 
+			<Var id="PNpuke"            displayName="PN_puke"            displayType="TOGGLE"/> 
+			<Var id="PNsleep"           displayName="PN_sleep"           displayType="TOGGLE"/> 
+		</VisibleVars>
+	</Group>
+	<Group id="PNanimspeed"             displayName="Mods.PN.anim.speed">
+		<PresetsArray>
+			<Preset id="0"              displayName="Default">
+				<Entry varId="PNpeesp" 		        value="1.0" />
+				<Entry varId="PNpoopsp" 		    value="1.4" /> 
+				<Entry varId="PNdrinksp" 	        value="1.0" />
+				<Entry varId="PNdrink2sp" 	        value="2.0" />
+				<Entry varId="PNeatsp"              value="1.0" />
+				<Entry varId="PNeat2sp"             value="1.2" />
+				<Entry varId="PNpukesp"             value="0.8" />
+				<Entry varId="PNcollapsesp"         value="1.0" />
+				<Entry varId="PNoilsp"              value="0.4" />
+				<Entry varId="PNgrindstonesp"       value="1.0" />
+				<Entry varId="PNworkbenchsp"        value="1.0" />
+				<Entry varId="PNlootstartsp"        value="1.2" />
+				<Entry varId="PNlootstopsp"         value="1.6" />
+				<Entry varId="PNdblootstartsp"      value="1.35" />
+				<Entry varId="PNdblootstopsp"       value="1.75" />
+			</Preset>
+		</PresetsArray>
+		<VisibleVars>
+			<Var id="PNpeesp" 		    displayName="PN_peesp" 		     displayType="SLIDER;0;2;200"/> 
+			<Var id="PNpoopsp" 		    displayName="PN_poopsp" 		 displayType="SLIDER;0;2;200"/> 
+			<Var id="PNdrinksp" 	    displayName="PN_drinksp" 		 displayType="SLIDER;0;2;200"/> 
+			<Var id="PNdrink2sp" 	    displayName="PN_drink2sp" 	     displayType="SLIDER;0;2;200"/> 
+			<Var id="PNeatsp"           displayName="PN_eatsp"           displayType="SLIDER;0;2;200"/> 
+			<Var id="PNeat2sp"          displayName="PN_eat2sp"          displayType="SLIDER;0;2;200"/> 
+			<Var id="PNcollapsesp"      displayName="PN_collapsesp"      displayType="SLIDER;0;2;200"/> 
+			<Var id="PNpukesp"          displayName="PN_pukesp"          displayType="SLIDER;0;2;200"/> 
+			<Var id="PNoilsp"           displayName="PN_oilsp"           displayType="SLIDER;0;2;200"/> 
+			<Var id="PNgrindstonesp"    displayName="PN_grindstonesp"    displayType="SLIDER;0;2;200"/> 
+			<Var id="PNworkbenchsp"     displayName="PN_workbenchsp"     displayType="SLIDER;0;2;200"/> 
+			<Var id="PNlootstartsp"     displayName="PN_lootstartsp"     displayType="SLIDER;0;2;200"/> 
+			<Var id="PNlootstopsp"      displayName="PN_lootstopsp"      displayType="SLIDER;0;2;200"/> 
+			<Var id="PNdblootstartsp"   displayName="PN_dblootstartsp"   displayType="SLIDER;0;2;200"/> 
+			<Var id="PNdblootstopsp"    displayName="PN_dblootstopsp"    displayType="SLIDER;0;2;200"/> 
+		</VisibleVars>
+	</Group>
+	<Group id="PNhud"                   displayName="Mods.PN.HUD">
+		<PresetsArray>
+			<Preset id="0"              displayName="Default">
+				<Entry varId="PNhudaon"		        value="1.0" />
+				<Entry varId="PNhudon"		        value="1.0" />
+				<Entry varId="PNhudspeedon"	        value="1.0" />
+				<Entry varId="PNhudtimeon"	        value="1.0" />
+				<Entry varId="PNhudhfac"	        value="1.0" />
+				<Entry varId="PNhudtfac"	        value="1.0" />
+				<Entry varId="PNhudffac"	        value="1.0" />
+			</Preset>
+		</PresetsArray>
+		<VisibleVars>
+			<Var id="PNhudon"			displayName="PN_hudon"			 displayType="TOGGLE"/>
+			<Var id="PNhudaon"			displayName="PN_hudaon"			 displayType="TOGGLE"/>
+			<Var id="PNhudspeedon"		displayName="PN_hudspeedon"		 displayType="TOGGLE"/>
+			<Var id="PNhudtimeon"		displayName="PN_hudtimeon"		 displayType="TOGGLE"/>
+			<Var id="PNhudhfac"			displayName="PN_hudhfac"		 displayType="TOGGLE"/>
+			<Var id="PNhudtfac"			displayName="PN_hudtfac"		 displayType="TOGGLE"/>
+			<Var id="PNhudffac"			displayName="PN_hudffac"		 displayType="TOGGLE"/>
+		</VisibleVars>
+	</Group>
+	<Group id="PNfood" displayName="Mods.PN.food">
+		<PresetsArray>
+			<Preset id="0" displayName="default">
+				<Entry varId="PNfed1dur" value="15" />
+				<Entry varId="PNfed2dur" value="90" />
+				<Entry varId="PNfed3dur" value="250" />
+				<Entry varId="PNhyd1dur" value="30" />
+				<Entry varId="PNhyd2dur" value="75" />
+				<Entry varId="PNhyd3dur" value="150" />
+				<Entry varId="PNfed1heal" value="45" />
+				<Entry varId="PNfed2heal" value="20" />
+				<Entry varId="PNfed3heal" value="15" />
+				<Entry varId="PNhyd1heal" value="50" />
+				<Entry varId="PNhyd2heal" value="15" />
+				<Entry varId="PNhyd3heal" value="5" />
+				<Entry varId="PNfed1combatheal" value="35" />
+				<Entry varId="PNfed2combatheal" value="12" />
+				<Entry varId="PNfed3combatheal" value="10" />
+				<Entry varId="PNhyd1combatheal" value="50" />
+				<Entry varId="PNhyd2combatheal" value="12" />
+				<Entry varId="PNhyd3combatheal" value="5" />
+			</Preset>
+		</PresetsArray>
+		<VisibleVars>
+			<Var id="PNfed1dur" displayName="PN_fed1dur" displayType="SLIDER;0;300;300"/>
+			<Var id="PNfed2dur" displayName="PN_fed2dur" displayType="SLIDER;0;300;300"/>
+			<Var id="PNfed3dur" displayName="PN_fed3dur" displayType="SLIDER;0;300;300"/>
+			<Var id="PNhyd1dur" displayName="PN_hyd1dur" displayType="SLIDER;0;300;300"/>
+			<Var id="PNhyd2dur" displayName="PN_hyd2dur" displayType="SLIDER;0;300;300"/>
+			<Var id="PNhyd3dur" displayName="PN_hyd3dur" displayType="SLIDER;0;300;300"/>
+			<Var id="PNfed1heal" displayName="PN_fed1heal" displayType="SLIDER;0;300;300"/>
+			<Var id="PNfed2heal" displayName="PN_fed2heal" displayType="SLIDER;0;300;300"/>
+			<Var id="PNfed3heal" displayName="PN_fed3heal" displayType="SLIDER;0;300;300"/>
+			<Var id="PNhyd1heal" displayName="PN_hyd1heal" displayType="SLIDER;0;300;300"/>
+			<Var id="PNhyd2heal" displayName="PN_hyd2heal" displayType="SLIDER;0;300;300"/>
+			<Var id="PNhyd3heal" displayName="PN_hyd3heal" displayType="SLIDER;0;300;300"/>
+			<Var id="PNfed1combatheal" displayName="PN_fed1combatheal" displayType="SLIDER;0;300;300"/>
+			<Var id="PNfed2combatheal" displayName="PN_fed2combatheal" displayType="SLIDER;0;300;300"/>
+			<Var id="PNfed3combatheal" displayName="PN_fed3combatheal" displayType="SLIDER;0;300;300"/>
+			<Var id="PNhyd1combatheal" displayName="PN_hyd1combatheal" displayType="SLIDER;0;300;300"/>
+			<Var id="PNhyd2combatheal" displayName="PN_hyd2combatheal" displayType="SLIDER;0;300;300"/>
+			<Var id="PNhyd3combatheal" displayName="PN_hyd3combatheal" displayType="SLIDER;0;300;300"/>
+		</VisibleVars>
+	</Group>
+	
+	<Group id="PNmisc"                  displayName="Mods.PN.misc">
+		<PresetsArray>
+			<Preset id="0"              displayName="Default">
+				<Entry varId="PNexptoggle"	        value="1.0" />
+				<Entry varId="PNconsumecombaton"    value="1.0"/>
+				<Entry varId="PNanimcombat"    		value="1.0"/>
+				<Entry varId="PNfeed1"              value="1.0" />
+				<Entry varId="PNfeed2"              value="1.0" />
+				<Entry varId="PNfeed3"              value="1.0" />
+				<Entry varId="PNfeed4"              value="1.0" />
+				<Entry varId="PNdrink1"             value="1.0" />
+				<Entry varId="PNdrink2"             value="1.0" />
+				<Entry varId="PNdrink3"             value="1.0" />
+				<Entry varId="PNdrink4"             value="1.0" />
+			</Preset>
+		</PresetsArray>
+		<VisibleVars>
+			<Var id="PNexptoggle"		displayName="PN_exptoggle"		 displayType="TOGGLE"/>
+			<Var id="PNconsumecombaton" displayName="PN_consumecombaton" displayType="TOGGLE"/>
+			<Var id="PNanimcombat"		displayName="PN_animcombat" 	 displayType="TOGGLE"/>
+			<Var id="PNfeed1" 			displayName="PN_feed1" 			 displayType="SLIDER;0;2;20"/>
+			<Var id="PNfeed2" 			displayName="PN_feed2" 			 displayType="SLIDER;0;2;20"/>
+			<Var id="PNfeed3" 			displayName="PN_feed3" 			 displayType="SLIDER;0;2;20"/>
+			<Var id="PNfeed4" 			displayName="PN_feed4" 			 displayType="SLIDER;0;2;20"/>
+			<Var id="PNdrink1" 			displayName="PN_drink1" 		 displayType="SLIDER;0;2;20"/>
+			<Var id="PNdrink2" 			displayName="PN_drink2" 		 displayType="SLIDER;0;2;20"/>
+			<Var id="PNdrink3" 			displayName="PN_drink3" 		 displayType="SLIDER;0;2;20"/>
+			<Var id="PNdrink4" 			displayName="PN_drink4" 		 displayType="SLIDER;0;2;20"/>
+			<Var id="PNdiff" 			displayName="" 					 displayType="TOGGLE"			 visibilityCondition="hideAlways"/>
+			<Var id="PNversion" 		displayName=""					 displayType="SLIDER;0;50;50000"	 visibilityCondition="hideAlways"/>
+			<Var id="PNinit" 			displayName="" 					 displayType="TOGGLE"			 visibilityCondition="hideAlways"/>
+			<Var id="PNmed" 			displayName="" 					 displayType="TOGGLE"			 visibilityCondition="hideAlways"/>
+		</VisibleVars>
+	</Group>
+</UserConfig>

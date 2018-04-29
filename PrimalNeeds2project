@@ -1,0 +1,115 @@
+<NotepadPlus>
+    <Project name="PrimalNeeds2">
+        <Folder name="bin">
+            <Folder name="config">
+                <Folder name="r4game">
+                    <Folder name="user_config_matrix">
+                        <Folder name="pc">
+                            <File name="PrimalNeeds2\bin\config\r4game\user_config_matrix\pc\modFMeditationConfig.xml" />
+                            <File name="PrimalNeeds2\bin\config\r4game\user_config_matrix\pc\PN.xml" />
+                        </Folder>
+                    </Folder>
+                </Folder>
+            </Folder>
+        </Folder>
+        <Folder name="mods">
+            <Folder name="modPrimalNeeds">
+                <Folder name="content">
+                    <Folder name="scripts">
+                        <Folder name="game">
+                            <Folder name="components">
+                                <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\components\inventoryComponent.ws" />
+                            </Folder>
+                            <Folder name="explorations">
+                                <Folder name="exploration_movement_system">
+                                    <Folder name="exploration_substates">
+                                        <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\explorations\exploration_movement_system\exploration_substates\explorationStateJump.ws" />
+                                    </Folder>
+                                </Folder>
+                            </Folder>
+                            <Folder name="gameplay">
+                                <Folder name="alchemy">
+                                    <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gameplay\alchemy\alchemyManager.ws" />
+                                    <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gameplay\alchemy\alchemyTypes.ws" />
+                                </Folder>
+                                <Folder name="containers">
+                                    <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gameplay\containers\actorRemains.ws" />
+                                    <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gameplay\containers\container.ws" />
+                                </Folder>
+                                <Folder name="effects">
+                                    <Folder name="effects">
+                                        <Folder name="auto">
+                                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gameplay\effects\effects\auto\adrenaline.ws" />
+                                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gameplay\effects\effects\auto\staminaRegen.ws" />
+                                        </Folder>
+                                        <Folder name="other">
+                                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gameplay\effects\effects\other\basicQuen.ws" />
+                                        </Folder>
+                                        <Folder name="regen">
+                                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gameplay\effects\effects\regen\regenEffect.ws" />
+                                        </Folder>
+                                        <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gameplay\effects\effects\baseEffect.ws" />
+                                    </Folder>
+                                </Folder>
+                                <Folder name="interactive">
+                                    <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gameplay\interactive\placeOfPowerEntity.ws" />
+                                    <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gameplay\interactive\repairItem.ws" />
+                                </Folder>
+                                <Folder name="items">
+                                    <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gameplay\items\itemsTypes.ws" />
+                                </Folder>
+                            </Folder>
+                            <Folder name="gui">
+                                <Folder name="hud">
+                                    <Folder name="modules">
+                                        <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gui\hud\modules\hudModuleControlsFeedback.ws" />
+                                        <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gui\hud\modules\hudModuleMinimap2.ws" />
+                                    </Folder>
+                                </Folder>
+                                <Folder name="main_menu">
+                                    <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gui\main_menu\ingameMenu.ws" />
+                                </Folder>
+                                <Folder name="menus">
+                                    <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gui\menus\meditationClockMenu.ws" />
+                                </Folder>
+                                <Folder name="popups">
+                                    <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gui\popups\CharacterStatsPopup.ws" />
+                                </Folder>
+                                <Folder name="_old">
+                                    <Folder name="components">
+                                        <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gui\_old\components\guiTooltipComponent.ws" />
+                                    </Folder>
+                                </Folder>
+                                <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\gui\inventoryContext.ws" />
+                            </Folder>
+                            <Folder name="npc">
+                                <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\npc\merchantNPC.ws" />
+                            </Folder>
+                            <Folder name="player">
+                                <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\player\playerInput.ws" />
+                                <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\player\playerWeaponHolster.ws" />
+                                <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\player\playerWitcher.ws" />
+                                <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\player\r4Player.ws" />
+                            </Folder>
+                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\types.ws" />
+                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\game\r4Game.ws" />
+                        </Folder>
+                        <Folder name="local">
+                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\local\FMED - explorationMeditation.ws" />
+                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\local\FMED - modFMeditationConfig.ws" />
+                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\local\PNCore.ws" />
+                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\local\PNData.ws" />
+                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\local\PNEffects.ws" />
+                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\local\PNFood.ws" />
+                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\local\PNHelperScript.ws" />
+                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\local\CAAnimations.ws" />
+                            <File name="PrimalNeeds2\mods\modPrimalNeeds\content\scripts\local\CAData.ws" />
+                        </Folder>
+                    </Folder>
+                </Folder>
+            </Folder>
+        </Folder>
+        <File name="PrimalNeeds2\settings.txt" />
+        <File name="PrimalNeeds2\xml.txt" />
+    </Project>
+</NotepadPlus>

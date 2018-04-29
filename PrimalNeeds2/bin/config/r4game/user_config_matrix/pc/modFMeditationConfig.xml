@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<UserConfig>
+   
+    <Group id="modFriendlyMeditation" displayName="Mods.friendly_meditation">
+		<PresetsArray>
+			<Preset id="0" displayName="fmed_defaults">
+				<Entry varId="fmedMaxHoursPerMinute" value="60.0"/>
+				<Entry varId="fmedHoursPerMinutePerSecond" value="10.0"/>
+				<Entry varId="fmedUseTimescale" value="false"/>
+				<Entry varId="fmedSpawnCampfire" value="false"/>
+				<Entry varId="fmedFullHealthRegenAnyDifficulty" value="false"/>
+				<Entry varId="fmedRefillPotionsWhileMeditating" value="true"/>
+				<Entry varId="fmedResetRefillSettingToDefaultAfterMeditation" value="true"/>
+				<Entry varId="fmedRefillIntervalMins" value="60.0"/>
+				<Entry varId="fmedHotkeyAsToggle" value="false"/>
+			</Preset>
+			<Preset id="1" displayName="fmed_timescale">
+				<Entry varId="fmedMaxHoursPerMinute" value="60.0"/>
+				<Entry varId="fmedHoursPerMinutePerSecond" value="20.0"/>
+				<Entry varId="fmedUseTimescale" value="true"/>
+				<Entry varId="fmedSpawnCampfire" value="false"/>
+				<Entry varId="fmedFullHealthRegenAnyDifficulty" value="false"/>
+				<Entry varId="fmedRefillPotionsWhileMeditating" value="true"/>
+				<Entry varId="fmedResetRefillSettingToDefaultAfterMeditation" value="true"/>
+				<Entry varId="fmedRefillIntervalMins" value="60.0"/>
+				<Entry varId="fmedHotkeyAsToggle" value="false"/>
+			</Preset>
+		</PresetsArray>
+        <VisibleVars>
+			<Var id="fmedMaxHoursPerMinute" displayName="fmed_maxHoursPerMinute" displayType="SLIDER;0;300;300" tags=""/>
+			<Var id="fmedHoursPerMinutePerSecond" displayName="fmed_hoursPerMinutePerSecond" displayType="SLIDER;0;50;50" tags=""/>
+			<Var id="fmedUseTimescale" displayName="fmed_useTimescale" displayType="TOGGLE"/>
+			<Var id="fmedSpawnCampfire" displayName="fmed_spawnCampfire" displayType="TOGGLE"/>
+			<Var id="fmedFullHealthRegenAnyDifficulty" displayName="fmed_fullHealthRegenAnyDifficulty" displayType="TOGGLE"/>
+			<Var id="fmedRefillPotionsWhileMeditating" displayName="fmed_refillPotionsWhileMeditating" displayType="TOGGLE"/>
+			<Var id="fmedResetRefillSettingToDefaultAfterMeditation" displayName="fmed_resetRefillSettingToDefaultAfterMeditation" displayType="TOGGLE"/>
+			<Var id="fmedRefillIntervalMins" displayName="fmed_refillIntervalMins" displayType="SLIDER;0;720;720" tags=""/>
+			<Var id="fmedHotkeyAsToggle" displayName="fmed_hotkeyAsToggle" displayType="TOGGLE"/>
+        </VisibleVars>
+    </Group>
+	
+</UserConfig>
