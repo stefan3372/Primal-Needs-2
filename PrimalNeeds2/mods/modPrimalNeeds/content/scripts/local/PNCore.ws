@@ -1,11 +1,11 @@
 class NeedsController 
 {
 	// needs
-	private var hunger : int;
-	private var thirst : int;
-	private var fatigue : int;
-	private var pee : int;
-	private var poop : int;
+	public var hunger : int;
+	public var thirst : int;
+	public var fatigue : int;
+	public var pee : int;
+	public var poop : int;
 
 	// counters
 	private var hungercnt : float;
@@ -144,10 +144,12 @@ class NeedsController
 		var time : int;
 		var diff : int;
 
-		PN_Notify("exec")
+		print("is this working?");
 				
 		dayNow = GameTimeDays(theGame.GetGameTime());
 		time = GameTimeToSeconds(theGame.GetGameTime()) / 60;
+
+		PN_Notify("time");
 
 		if ( thePlayer.IsCiri() ) {
 			return;

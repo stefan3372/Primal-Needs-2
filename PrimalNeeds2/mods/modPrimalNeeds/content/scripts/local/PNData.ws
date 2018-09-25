@@ -120,6 +120,7 @@ function PN_Notify( text : string)              { theGame.GetGuiManager().ShowNo
 function PN_HudNotify( text : string )          { thePlayer.DisplayHudMessage( text );}
 function PN_ConsumeCombatOn() : bool            { return theGame.GetInGameConfigWrapper().GetVarValue('PNmisc', 'PNconsumecombaton'); }
 function PN_AllowAnimsInCombat() : bool         { return theGame.GetInGameConfigWrapper().GetVarValue('PNmisc', 'PNanimcombat'); }
+function print(val : string) {LogChannel('PNDebug', val);}
 
 
 // ==============
