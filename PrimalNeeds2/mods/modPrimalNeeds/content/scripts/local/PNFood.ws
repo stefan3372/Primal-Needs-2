@@ -9,7 +9,6 @@ struct PrimalFood
 
 class FoodController
 {
-
 	public var playerItems: array < PrimalFood > ;
 	
 	public function Init() {
@@ -154,8 +153,7 @@ class FoodController
 		}
 	}
 
-	function ReworkOneFoodItem(item: SItemUniqueId, inv: CInventoryComponent): PrimalFood
-	{
+	function ReworkOneFoodItem(item: SItemUniqueId, inv: CInventoryComponent): PrimalFood {
 		var timeNow: int;
 		var pfood: PrimalFood;
 
@@ -188,69 +186,53 @@ class FoodController
 		if (inv.GetItemName(item) == 'Erveluce')
 		{
 			inv.PN_SetFoodQuality(item, 'BeverageQuality_1');
-
 			pfood.thirst = RandRange(30, 15);
 			return pfood;
 		}
 		if (inv.GetItemName(item) == 'Est Est')
 		{
-
 			inv.PN_SetFoodQuality(item, 'BeverageQuality_1');
-
 			pfood.thirst = RandRange(50, 40);
 			return pfood;
 		}
 		if (inv.GetItemName(item) == 'Kaedwenian Stout')
 		{
-
 			inv.PN_SetFoodQuality(item, 'BeverageQuality_2');
-
 			pfood.thirst = RandRange(30, 15);
 			return pfood;
 		}
 		if (inv.GetItemName(item) == 'Mettina Rose')
 		{
-
 			inv.PN_SetFoodQuality(item, 'BeverageQuality_1');
-
 			pfood.thirst = RandRange(15, 10);
 			return pfood;
 		}
 		if (inv.GetItemName(item) == 'Local pepper vodka')
 		{
-
 			inv.PN_SetFoodQuality(item, 'BeverageQuality_1');
-
 			pfood.thirst = RandRange(10, 5);
 			return pfood;
 		}
 		if (inv.GetItemName(item) == 'Redanian Lager')
 		{
-
 			inv.PN_SetFoodQuality(item, 'BeverageQuality_2');
-
 			pfood.thirst = RandRange(30, 15);
 			return pfood;
 		}
 		if (inv.GetItemName(item) == 'Rivian Kriek')
 		{
-
 			inv.PN_SetFoodQuality(item, 'BeverageQuality_2');
-
 			pfood.thirst = RandRange(30, 15);
 			return pfood;
 		}
 		if (inv.GetItemName(item) == 'Viziman Champion')
 		{
-
 			inv.PN_SetFoodQuality(item, 'BeverageQuality_2');
-
 			pfood.thirst = RandRange(30, 15);
 			return pfood;
 		}
 		if (inv.GetItemName(item) == 'Apple')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_1');
 			pfood.expire = 3;
 			inv.AddItemBaseAbility(item, 'expire_day_3');
@@ -260,7 +242,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Baked apple')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_1');
 			pfood.expire = 5;
 			inv.AddItemBaseAbility(item, 'expire_day_5');
@@ -270,7 +251,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Banana')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_1');
 			pfood.expire = 3;
 			inv.AddItemBaseAbility(item, 'expire_day_3');
@@ -279,7 +259,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Bell pepper')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_1');
 			inv.AddItemBaseAbility(item, 'expire_day_5');
 			pfood.hunger = RandRange(10, 5);
@@ -287,7 +266,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Blueberries')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_1');
 			inv.AddItemBaseAbility(item, 'expire_day_5');
 			pfood.thirst = RandRange(10, 5);
@@ -303,7 +281,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Burned bread')
 		{
-
 			inv.PN_SetFoodQuality(item, '');
 			inv.AddItemBaseAbility(item, 'expire_day_4');
 			pfood.hunger = RandRange(22, 16);
@@ -311,7 +288,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Bun')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_1');
 			inv.AddItemBaseAbility(item, 'expire_day_3');
 			pfood.hunger = RandRange(22, 16);
@@ -319,7 +295,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Burned bun')
 		{
-
 			inv.PN_SetFoodQuality(item, '');
 			inv.AddItemBaseAbility(item, 'expire_day_4');
 			pfood.hunger = RandRange(10, 5);
@@ -327,7 +302,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Candy')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_1');
 			inv.AddItemBaseAbility(item, 'expire_day_5');
 			pfood.hunger = RandRange(10, 5);
@@ -335,7 +309,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Cheese')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_3');
 			inv.AddItemBaseAbility(item, 'expire_day_5');
 			pfood.hunger = RandRange(22, 16);
@@ -343,7 +316,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Chicken')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_3');
 			inv.AddItemBaseAbility(item, 'expire_day_1');
 			pfood.hunger = RandRange(40, 35);
@@ -351,7 +323,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Chicken leg')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_2');
 			inv.AddItemBaseAbility(item, 'expire_day_2');
 			pfood.hunger = RandRange(22, 16);
@@ -366,7 +337,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Roasted chicken')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_3');
 			inv.AddItemBaseAbility(item, 'expire_day_3');
 			pfood.hunger = RandRange(40, 35);
@@ -374,7 +344,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Chicken sandwich')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_3');
 			inv.AddItemBaseAbility(item, 'expire_day_1');
 			pfood.hunger = RandRange(30, 25);
@@ -382,7 +351,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Grilled chicken sandwich')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_3');
 			inv.AddItemBaseAbility(item, 'expire_day_2');
 			pfood.hunger = RandRange(40, 35);
@@ -390,7 +358,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Cucumber')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_2');
 			inv.AddItemBaseAbility(item, 'expire_day_4');
 			pfood.hunger = RandRange(10, 5);
@@ -399,7 +366,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Dried fruit')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_2');
 			inv.AddItemBaseAbility(item, 'expire_day_5');
 			pfood.hunger = RandRange(10, 5);
@@ -407,7 +373,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Dried fruit and nuts')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_2');
 			inv.AddItemBaseAbility(item, 'expire_day_5');
 			pfood.hunger = RandRange(10, 5);
@@ -415,7 +380,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Egg')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_2');
 			inv.AddItemBaseAbility(item, 'expire_day_2');
 			pfood.hunger = RandRange(10, 5);
@@ -423,7 +387,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Fish')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_2');
 			inv.AddItemBaseAbility(item, 'expire_day_1');
 			pfood.hunger = RandRange(22, 16);
@@ -431,7 +394,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Fried fish')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_3');
 			inv.AddItemBaseAbility(item, 'expire_day_4');
 			pfood.hunger = RandRange(22, 16);
@@ -439,7 +401,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Gutted fish')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_2');
 			inv.AddItemBaseAbility(item, 'expire_day_3');
 			pfood.hunger = RandRange(22, 16);
@@ -447,7 +408,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Fondue')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_3');
 			inv.AddItemBaseAbility(item, 'expire_day_1');
 			pfood.hunger = RandRange(22, 16);
@@ -455,7 +415,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Grapes')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_1');
 			inv.AddItemBaseAbility(item, 'expire_day_5');
 			pfood.hunger = RandRange(10, 5);
@@ -464,7 +423,6 @@ class FoodController
 		}
 		if (inv.GetItemName(item) == 'Ham sandwich')
 		{
-
 			inv.PN_SetFoodQuality(item, 'FoodEdibleQuality_2');
 			inv.AddItemBaseAbility(item, 'expire_day_2');
 			pfood.hunger = RandRange(30, 25);

@@ -291,11 +291,12 @@ function PN_Init() {
 		// Version
 		wrapper.SetVarValue('PNmisc', 'PNversion', "2.0");
 		wrapper.SetVarValue('PNmisc', 'PNinit', true);
-		
+
 		thePlayer.PN_Init();
 		PN_HudNotify("Primal Needs: Initialized!");
 	} else {
 		// PN_HudNotify("Primal Needs: Already Initialized!");
 	}
+	thePlayer.CAInit();
 }
 

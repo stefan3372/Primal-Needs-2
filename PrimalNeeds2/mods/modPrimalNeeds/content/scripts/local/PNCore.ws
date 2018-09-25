@@ -6,6 +6,16 @@ class NeedsController
 	private var fatigue : int;
 	private var pee : int;
 	private var poop : int;
+
+	// counters
+	private var hungercnt : float;
+	private var thirstcnt : float;
+	private var fatiguecnt : float;
+
+	// helpers
+	private var daychanged : int;
+	private var lasttime : int;
+	private var medflag : bool;
 	
 	public function SetHunger( val : int )       { CheckVal(val); hunger = val; }	
 	public function SetThirst( val : int )       { CheckVal(val); thirst = val; }
@@ -24,12 +34,14 @@ class NeedsController
 	public function Drink( drink : int ) { if ( PN_ThirstOn() ) { if (PN_PeeOn() && drink > 0) RisePee(PN_PeeRisePerDrink()); SetThirst( thirst - drink ); ResetThirstCnt(); } }
 	public function DrinkShallow( drink : int ) { if ( PN_ThirstOn() ) { thePlayer.abilityManager.GainStat( BCS_Toxicity, PN_GetShallowTox() ); SetThirst( thirst - drink ); ResetThirstCnt(); } }
 	public function DrinkShallowWater() { if ( PN_ThirstOn() ) { if (thePlayer.IsInShallowWater()) { thePlayer.GetPrimalAnims().ShallowAnim(); } else { PN_HudNotify( GetLocStringByKeyExt("HUDmessage_NoShallowWaterToDrink") ); } } }
-	function Pee() { 
+
+	function Pee() {
 		if (PN_PeeOn()) {
 			theGame.GetBehTreeReactionManager().CreateReactionEventIfPossible( thePlayer, 'DrawSwordAction', -1, 10.0f, -1, 9999, true); 
 			thePlayer.GetPrimalAnims().PeeAnim();
 		}
 	}
+
 	function Poop() {
 		if (PN_PoopOn()) {
 			theGame.GetBehTreeReactionManager().CreateReactionEventIfPossible( thePlayer, 'DrawSwordAction', -1, 10.0f, -1, 9999, true); 
@@ -49,6 +61,7 @@ class NeedsController
 			DecHungerCnt( PN_GetHungerInc() );
 		}
 	}
+
 	public function RiseThirst( diff : int ) {
 		if ( diff > 1 ) {
 			if (!medflag) {
@@ -61,6 +74,7 @@ class NeedsController
 			DecThirstCnt( PN_GetThirstInc() );
 		}
 	}
+
 	public function RiseFatigue( diff : int ) {
 		if (!medflag) {
 			if ( diff > 1 ) {
@@ -74,23 +88,19 @@ class NeedsController
 		} else {
 			Meditate( diff );
 		}
-	}	
+	}
+
 	public function RisePee( val : int ) {
 		if (PN_PeeOn()) {
 			SetPee( pee + val);
 		}
 	}
-	
+
 	public function RisePoop( val : int ) {
 		if (PN_PoopOn()) {
 			SetPoop( poop + val );
 		}
 	}
-	
-	// counters
-	private var hungercnt : float;
-	private var thirstcnt : float;
-	private var fatiguecnt : float;
 	
 	public function ResetHungerCnt()             { hungercnt = PN_GetHungerCounter(); }
 	public function ResetThirstCnt()             { thirstcnt = PN_GetThirstCounter(); }
@@ -101,12 +111,7 @@ class NeedsController
 	public function GetHungerCnt() : float       { return hungercnt; }
 	public function GetThirstCnt() : float       { return thirstcnt; }
 	public function GetFatigueCnt() : float      { return fatiguecnt; }
-	
-	// helpers
-	private var daychanged : int;
-	private var lasttime : int;
-	private var medflag : bool;
-	
+
 	public function SetDayChanged( val : int )   { daychanged = val; }
 	public function IncDayChanged()              { daychanged += 1; }
 	public function GetDayChanged() : int        { return daychanged; }
@@ -118,13 +123,14 @@ class NeedsController
 	
 	// misc
 	private function CheckVal( out val : int )   { if ( val > 100 ) val = 100; if ( val < 0 ) val = 0; }
-	public function ResetNeeds()				 {
+	public function ResetNeeds() {
 		hunger = 0; thirst = 0; fatigue = 0;
 		pee = 0; poop = 0;
 		ResetHungerCnt();
 		ResetThirstCnt();
 		ResetFatigueCnt();
 	}
+
 	public function Init()
 	{	
 		SetLastTime(GameTimeToSeconds(theGame.GetGameTime()) / 60);
@@ -137,10 +143,16 @@ class NeedsController
 		var dayNow : int;
 		var time : int;
 		var diff : int;
+
+		PN_Notify("exec")
 				
 		dayNow = GameTimeDays(theGame.GetGameTime());
 		time = GameTimeToSeconds(theGame.GetGameTime()) / 60;
-			
+
+		if ( thePlayer.IsCiri() ) {
+			return;
+		}
+
 		// Real Time Meditation Support
 		if ( thePlayer.GetCurrentStateName() == 'AlchemyBrewing' 		  	// Primer support
 		  || thePlayer.GetCurrentStateName() == 'ExplorationMeditation' 	// Preparation + Friendly Meditation support
@@ -161,11 +173,7 @@ class NeedsController
 		
 		diff = time - GetLastTime();
 		SetLastTime(time);
-		
-		if ( thePlayer.IsCiri() ) {
-			return;
-		}
-		
+
 		if (PN_ExpireOn()) {
 			if ( GetDayChanged() != dayNow) {
 				IncDayChanged();
@@ -293,14 +301,14 @@ exec function ResetNeeds() {
 	thePlayer.GetPrimalNeeds().ResetNeeds();
 }
 
-exec function PauseNeeds() {
-	SetBool("pauseneeds", true);
-}
-
-exec function ResumeNeeds() {
-	SetBool("pauseneeds", false);
-}
-
-exec function reinit() {
-	SetBool("initialized", false);
-}
+//exec function PauseNeeds() {
+//	SetBool("pauseneeds", true);
+//}
+//
+//exec function ResumeNeeds() {
+//	SetBool("pauseneeds", false);
+//}
+//
+//exec function reinit() {
+//	SetBool("initialized", false);
+//}

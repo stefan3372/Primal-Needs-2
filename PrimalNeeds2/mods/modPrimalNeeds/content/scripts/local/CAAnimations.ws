@@ -13,19 +13,19 @@ enum CompleteAnimationTypes {
 }
 
 class CompleteAnimations {
-	public var anim						: int;
-	public var isLoop					: bool;
+	public var anim						    : int;
+	public var isLoop					    : bool;
 	public var drinkMode					: name;
 	public var suppressDrawSwordReaction 	: bool;
-	public var prevState 				: name;
-	public var potionId  				: SItemUniqueId;
-	public var onHitInterrupt 			: bool;
+	public var prevState 				    : name;
+	public var potionId  				    : SItemUniqueId;
+	public var onHitInterrupt 			    : bool;
 	public var hornItem 					: name;
-	public var secondHornItem				: name;
+	public var secondHornItem			    : name;
 	public var usedLeftItem 				: bool;
-	public var oilId 					: SItemUniqueId;
-	public var usedOnItem 				: SItemUniqueId;
-	public var container 				: W3Container;
+	public var oilId 					    : SItemUniqueId;
+	public var usedOnItem 	    			: SItemUniqueId;
+	public var container 			    	: W3Container;
 	public var ItemToConsume 				: SItemUniqueId;
 	public var SlotToConsume 				: EEquipmentSlots;
 	
@@ -641,5 +641,43 @@ state CAInterruption in CR4Player
 			parent.inv.RemoveItem( heldItem, parent.inv.GetItemQuantity( heldItem ));
 		}
 		
+	}
+}
+
+latent function SlowDownAnimation( time : float, max : float, min : float, step : int)
+{
+	var speedMultID : int;
+	var sleepStep : float;
+	var speedStep : float;
+	var currSpeed : float;
+	var i : int;
+
+	sleepStep = time / (float) step;
+	speedStep = ( max - min ) / (float) step;
+	currSpeed = max;
+
+	for ( i = 0; i < step; i+=1) {
+		speedMultID = thePlayer.SetAnimationSpeedMultiplier( currSpeed , speedMultID );
+		currSpeed -= speedStep;
+		Sleep(sleepStep);
+	}
+}
+
+latent function SpeedUpAnimation( time : float, min : float, max : float, step : int)
+{
+	var speedMultID : int;
+	var sleepStep : float;
+	var speedStep : float;
+	var currSpeed : float;
+	var i : int;
+
+	sleepStep = time / (float) step;
+	speedStep = ( max - min ) / (float) step;
+	currSpeed = min;
+
+	for ( i = 0; i < step; i+=1) {
+		speedMultID = thePlayer.SetAnimationSpeedMultiplier( currSpeed , speedMultID );
+		currSpeed += speedStep;
+		Sleep(sleepStep);
 	}
 }
