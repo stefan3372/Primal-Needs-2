@@ -1,21 +1,21 @@
 class NeedsController 
 {
 	// needs
-	public var hunger : int;
-	public var thirst : int;
-	public var fatigue : int;
-	public var pee : int;
-	public var poop : int;
+	private saved var hunger : int;
+	private saved var thirst : int;
+	private saved var fatigue : int;
+	private saved var pee : int;
+	private saved var poop : int;
 
 	// counters
-	private var hungercnt : float;
-	private var thirstcnt : float;
-	private var fatiguecnt : float;
+	private saved var hungercnt : float;
+	private saved var thirstcnt : float;
+	private saved var fatiguecnt : float;
 
 	// helpers
-	private var daychanged : int;
-	private var lasttime : int;
-	private var medflag : bool;
+	private saved var daychanged : int;
+	private saved var lasttime : int;
+	private saved var medflag : bool;
 	
 	public function SetHunger( val : int )       { CheckVal(val); hunger = val; }	
 	public function SetThirst( val : int )       { CheckVal(val); thirst = val; }
